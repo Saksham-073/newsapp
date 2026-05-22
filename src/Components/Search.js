@@ -20,6 +20,7 @@ function Search({ apikey, setprogress }) {
       setquery(q)
       runSearch(q, 1)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams])
 
   const runSearch = async (q, pg) => {
